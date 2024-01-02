@@ -1,0 +1,284 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navgation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    /* position: flex; */
+    background-color: rgba(0, 0, 0, 0.479);
+    height: 80%;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 15px;
+    /* opacity: 0.7; */
+}
+
+
+/* Navigation Bar: Logo and Images */
+#logo {
+    margin: 10px 53px;
+}
+
+#logo img {
+    border-radius: 50%;
+    margin: 3px -42px;
+    height: 42px;
+    width: 37px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 23px;
+    margin-top: -10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    /* color: rgb(230, 36, 36); */
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    /* justify-content: center; */
+    justify-content: end;
+    align-items: center;
+    height: 280px;
+    /* margin-top:70px; */
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("../bg1.avif") no-repeat center center/cover;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'bree serif', serif;
+    font-size: 40px;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'bree serif', serif;
+}
+
+/* SERVICES SECTION */
+#services {
+    display: flex;
+    margin: 20px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 0px 65px;
+    height: 320px;
+    padding: 23px;
+    border-radius: 23px;
+    background-color: rgb(217, 219, 222);
+}
+
+#services .box img {
+    margin: auto;
+    height: 160px;
+    display: block;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* #services .box h2 {
+    margin: auto;
+    height: 300px;
+    display: block;
+    height: 34px;
+    font-size: 26px;
+} */
+
+#services .box p {
+    font-family: 'bree serif', serif;
+
+}
+
+
+/* CLIENTS SECTION */
+#client-section {
+    /* height: 370px; */
+    height: 255px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 90px;
+
+    border-radius: 50%;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 49%;
+    z-index: -1;
+    opacity: 0.3;
+
+
+}
+
+/* CONTACT SECTION */
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 9px;
+}
+
+#contact-box label {
+    font-size: 1.1rem;
+    font-family: 'bree serif', serif;
+
+}
+
+
+/* FOOTER */
+footer {
+    background: rgb(58, 56, 56);
+    color: white;
+    padding: 5px;
+}
+
+
+/* UTILITY CLASSES */
+.h-primary {
+    font-size: 2.6rem;
+    padding: 1px;
+    margin-top: 10px;
+    font-family: 'bree serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'bree serif', serif;
+}
+
+.btn {
+    background-color: rgb(119, 7, 7);
+    padding: 6px 20px;
+    margin: 29px;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: brown;
+    border: 2px solid rgb(243, 239, 239);
+    transition-duration: 0.4s;
+}
+
+.btn1 {
+    background-color: rgb(199, 7, 7);
+    padding: 6px 20px;
+    margin: 29px 59px;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: brown;
+    border: 2px solid rgb(243, 239, 239);
+    transition-duration: 0.4s;
+}
+
+.center {
+    text-align: center;
+}
