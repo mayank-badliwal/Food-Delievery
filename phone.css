@@ -1,0 +1,131 @@
+/* NAVIGATION */
+#navbar{
+    height: 30px;
+}
+
+#navbar ul{
+    margin-left: -50px;}
+
+#navbar ul li{
+    flex-direction: column;
+    /* margin-left: 0px; */
+
+}
+
+#navbar img{
+    height: 19px;
+    width: 19px;
+
+}
+
+#navbar ul li a {
+    font-size: 0.7rem;
+    /* margin: 0px 2px; */
+    padding: 0px 8px;
+    padding-bottom: 4px;
+    font-family: 'bree serif', serif;
+}
+
+
+/* HOME SECTION */
+#home {
+    height: 331px;
+    padding: 3px 28px;
+}
+
+#home::before {
+    height: 370px;
+}
+
+#home p {
+    font-size: 13px;
+}
+
+
+
+
+/* SERVICES SECTION */
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    margin: 2px 0px;
+    padding: 14px;
+    margin-bottom: 10px;
+    /* height: 270px; */
+
+}
+
+
+
+/* CLIENTS SECTION */
+#clients {
+    flex-wrap: wrap;
+}
+
+#clients img {
+    width: 50px;
+    padding: 2px;
+    height: 70px;
+
+}
+
+.client-item {
+    padding: 4px;
+}
+
+/* #client-section::before{
+    height: 30%;
+} */
+
+#client-section {
+    /* height: 370px; */
+    height: 180px;
+}
+
+
+/* CONTACT SECTION */
+#contact-box .form-group {
+    width: 150px;
+    /* height: 200px; */
+    margin-right: 18px;
+    
+}
+
+
+
+/* FOOTER */
+
+
+/* UTILITY CLASSES */
+#h-primary {
+    font-size: 23px;
+}
+
+.btn {
+    font-size: 13px;
+    padding: 3px 6px;
+}
+
+.btn:hover {
+    background-color: brown;
+    border: 2px solid rgb(243, 239, 239);
+    transition-duration: 0.4s;
+}
+
+.btn1 {
+    font-size: 13px;
+    padding: 3px 6px;
+    /* margin: opx 23px; */
+    margin-right: 100px;
+    /* position: relative;
+    justify-content: center;
+    align-items: center; */
+}
+
+.btn1:hover {
+    background-color: brown;
+    border: 2px solid rgb(243, 239, 239);
+    transition-duration: 0.4s;
+}
